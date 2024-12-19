@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVELOPER PORTFOLIO </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(9, 4, 20, 0.938);
+            color: aliceblue;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(15, 43, 59);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            color: rgb(224, 3, 3);
+            font-size: 1.05rem;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+
+        }
+
+        .leftsection {
+
+            font-size: 3rem;
+            margin: 40px 0;
+        }
+
+        .rightsection img {
+            width: 110%;
+            margin: 50px 0;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .purple {
+            color: rgb(248, 194, 15);
+        }
+
+        .anit {
+            color: aqua;
+            margin: 30px 0;
+            font-size: 2rem
+        }
+
+        /* SECTIONS */
+
+        .about {
+
+            color: rgb(33, 224, 15);
+            font-size: 3rem;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .aboutP {
+            padding: 20px;
+            font-size: 1.5rem;
+
+        }
+
+        .skilltext {
+            color: rgb(230, 11, 211);
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .leftskill {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .skilldiscription {
+            padding: 20px;
+        }
+        
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Welcome My Portfolio </div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="about">ABOUT</a></li>
+                <li><a href="/">SKILLS</a></li>
+                <li><a href="/">CONTACT ME </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <span class="purple">MR. AMAN KUSHWAHA</span>
+                <div>
+                    <span class="anit">B.TECH Student | CSE | Developer </span>
+                </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="https://firstfloor.agency/wp-content/uploads/2022/06/440-Converted-2048x1606.png" alt="">
+            </div>
+        </section>
+
+        <section >
+            <h1 class="about">
+                <hr>About Me</hr>
+             </h1>
+            <p class="aboutP">Hello! i am Aman Kushwaha , a B.Tech student in computer science engineering. I have skills in C , C++, python,and html and i've worked on various projects like a claculator and analog clock . I also completed a workshop on linux and AWS .</p>
+        </section>
+
+        <section>
+            <div class="leftskill">
+                <span class="skilltext">
+                    <hr>Skills</hr>
+                </span>
+                <ul class="skilldiscription">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>HTML & CSS </li>
+                    <li>Linux & AWS</li>
+                </ul>
+
+            </div>
+        </section>
+
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {  
+            strings: ['<i></i> pursuing B.tech.', 'from shri rama krishna college of engineering science and management.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
